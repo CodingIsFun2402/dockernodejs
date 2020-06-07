@@ -7,7 +7,7 @@ app.get("/", function( req, res) {
     var message = "Anzahl Zugriffe: ";
     counter++;
     message = message + counter;
-    res.send();
+    res.send(message);
 });
 
 app.listen(3300, function() {
