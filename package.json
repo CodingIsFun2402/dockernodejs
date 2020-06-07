@@ -1,0 +1,26 @@
+{
+  "name": "dockernodejs",
+  "version": "0.0.0",
+  "description": "Learn something about NodeJS and Docker",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingIsFun2402/dockernodejs.git"
+  },
+  "keywords": [
+    "docker",
+    "nodejs"
+  ],
+  "author": "Marko Moritz",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CodingIsFun2402/dockernodejs/issues"
+  },
+  "homepage": "https://github.com/CodingIsFun2402/dockernodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

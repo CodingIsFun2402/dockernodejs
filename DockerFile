@@ -1,0 +1,17 @@
+# specify the node base image with your desired version node:<version>
+FROM node:14
+# Define working directory
+WORKDIR /app
+# copy sources - here node packages definition
+COPY package.json /app
+# let npm install these packages
+RUN npm install
+# copy sources - here all sources from the current dirctory
+COPY . /app
+# start the node application
+CMD node start.js
+# replace this with your application's default port
+EXPOSE 3344
+
+# as next build the docker file in shell with: docker build -t start-docker .
+# start docker container: docker run -it -p 3344:3300 start-docker
